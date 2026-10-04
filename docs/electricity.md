@@ -19,6 +19,18 @@ Treat this as a testable model, not a finished specification:
 
 Generates electricity.
 
+### Thermal power plant
+
+Verified in-game observations:
+
+- Worker capacity: **4**
+- Screenshot observed with **3/4** workers assigned
+- Consumption shown: **10 coal**
+
+The UI displays the coal value as `-10`. The exact time basis for this
+consumption is not yet documented, so do not label it as "per hour" until that
+is verified in-game.
+
 ### Transformer
 
 Used as part of the electricity distribution network.
@@ -45,6 +57,9 @@ that building's heating fuel unless the UI or testing confirms it.
 
 ## Open tests
 
+- Thermal power plant electricity output
+- Thermal power plant coal-consumption time basis
+- Whether output changes with worker count
 - Can a building connect directly to a Windmill?
 - Is a Transformer mandatory or just useful for distribution?
 - Exact wire distance limits

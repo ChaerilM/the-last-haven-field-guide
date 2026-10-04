@@ -24,12 +24,15 @@ Generates electricity.
 Verified in-game observations:
 
 - Worker capacity: **4**
-- Screenshot observed with **3/4** workers assigned
-- Consumption shown: **10 coal**
+- Observed at **4/4** workers
+- Consumption shown: **10 wood**
 
-The UI displays the coal value as `-10`. The exact time basis for this
+The UI displays the wood value as `-10`. The exact time basis for this
 consumption is not yet documented, so do not label it as "per hour" until that
 is verified in-game.
+
+> Earlier documentation in this repository incorrectly identified the icon as
+> coal. The clearer current screenshot shows the wood/plank icon.
 
 ### Transformer
 
@@ -49,20 +52,28 @@ The construction tooltip describes it as:
 This suggests storage/buffering rather than being required for basic
 generation.
 
-### Building upgrade
+### Building electrical upgrades
 
-Buildings that support electricity show a lightning-bolt **Upgrade** button.
-Document the exact effect per building; do not assume electricity replaces
-that building's heating fuel unless the UI or testing confirms it.
+Current screenshots confirm that an electrical upgrade can replace a
+building's displayed fuel consumption with electricity:
+
+- **Greenhouse II, unupgraded:** 1 coal shown
+- **Greenhouse II, electrically upgraded:** 10 electricity shown
+- **Factory I, electrically upgraded:** 20 electricity shown
+
+For Factory I, the production window simultaneously showed **150% efficiency**
+while producing Armor III. This is recorded as an observation only; more
+testing is needed before attributing the 150% efficiency specifically to the
+electrical upgrade.
 
 ## Open tests
 
 - Thermal power plant electricity output
-- Thermal power plant coal-consumption time basis
-- Whether output changes with worker count
+- Thermal power plant wood-consumption time basis
+- Whether power output changes with worker count
 - Can a building connect directly to a Windmill?
 - Is a Transformer mandatory or just useful for distribution?
 - Exact wire distance limits
 - Gravity accumulator capacity and charge/discharge behavior
-- Electricity consumption by each building
-- Whether electrification changes production speed, workers, or fuel use
+- Electricity consumption by additional buildings
+- Whether electrification changes production speed/efficiency on each building

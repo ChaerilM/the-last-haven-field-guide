@@ -1,0 +1,27 @@
+weapon,ammo,damage,range,accuracy,metal_cost,production_hours,status
+UMP45,I,36,2000,26,,,verified-in-game
+USP45,I,35,2000,23,,,verified-in-game
+USP45 (Silencer),I,35,2000,27,,,verified-in-game
+MP7,I,32,1950,22,,,verified-in-game
+MP5K,I,31,1950,23,,,verified-in-game
+UZI,I,30,1950,22,,,verified-in-game
+Glock,I,28,2000,13,,,verified-in-game
+MAC10,I,28,1900,15,,,verified-in-game
+Colt 1911,I,33,2000,20,,,verified-in-game
+Beretta 92F,I,34,2000,22,,,verified-in-game
+Desert Eagle,I,60,2000,31,,,verified-in-game
+Rhino,I,73,2000,27,,,verified-in-game
+FAMAS,II,35,2200,28,,,verified-in-game
+Galil,II,36,2200,28,,,verified-in-game
+Springfield,III,140,2400,28,,,verified-in-game
+Mosina,III,150,2500,31,,,verified-in-game
+SSG-3000,III,145,2600,51,,,verified-in-game
+Stationary Machinegun,IV,45,2400,30,,,verified-in-game
+F2000,,,,,9,82,verified-in-game
+Tavor,,,,,8,100,verified-in-game
+M249,,,,,9,160,verified-in-game
+MG4,,,,,10,180,verified-in-game
+Barrett M82,,,,,20,190,verified-in-game
+SVD,,,,,9,82,verified-in-game
+M110,,,,,9,88,verified-in-game
+M21,,,,,9,100,verified-in-game

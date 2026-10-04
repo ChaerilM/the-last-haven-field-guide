@@ -45,27 +45,38 @@ indicates that wood is the fallback fuel when coal is unavailable.
 
 The exact consumption period is not yet verified.
 
+There is also an unverified player observation that the Thermal power plant
+may only allow one outgoing electrical cable.
+
 ## Factory I
 
-Verified in-game observations for an electrically upgraded Factory I:
+Verified in-game observations:
 
 - Worker capacity: **4**
-- Electricity consumption shown: **20**
+- Unupgraded consumption shown: **2 coal**
+- Electrically upgraded consumption shown: **20 electricity**
 - Production window showed **150% efficiency** while producing Armor III
 
 Do not yet assume that electricity alone causes the 150% efficiency; other
 research/upgrades may also contribute.
+
+## Factory II
+
+Verified in-game observations:
+
+- Worker capacity: **4**
+- Unupgraded consumption shown: **3 coal**
+
+The electrically upgraded consumption value has not yet been captured.
+
+Factory II should be tracked separately from Factory I rather than treated as
+a straight replacement, because their production lists differ.
 
 ## Science Center
 
 Once all research is completed, staffed Science Centers have little remaining
 research value. Workers can be reassigned. Keep one unstaffed if desired for
 future testing or game updates.
-
-## Factory I and Factory II
-
-Track these as separate buildings rather than assuming Factory II replaces
-Factory I. Their available production lists should be documented independently.
 
 ## Resource Station
 

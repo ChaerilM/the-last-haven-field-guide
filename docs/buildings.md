@@ -33,14 +33,17 @@ The Kitchen appears to process food automatically while staffed and supplied.
 
 ## Thermal power plant
 
-Verified in-game observations:
+Current in-game observations:
 
 - Worker capacity: **4**
-- Observed at **4/4** workers
-- Consumption shown: **10 wood**
+- Normal consumption shown: **10 coal**
+- When coal is unavailable, consumption switches to **10 wood**
 
-The panel displays `-10` next to the wood/plank icon. The exact consumption
-period is not yet verified.
+Screenshots show the building displaying `-10` with the coal icon in one
+state and `-10` with the wood/plank icon in another. Gameplay observation
+indicates that wood is the fallback fuel when coal is unavailable.
+
+The exact consumption period is not yet verified.
 
 ## Factory I
 

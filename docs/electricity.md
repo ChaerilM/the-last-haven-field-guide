@@ -11,13 +11,25 @@ The electricity system includes:
 
 ## Current working model
 
-Treat this as a testable model, not a finished specification:
+Current player testing shows that a Transformer is **not mandatory** for a
+basic connection.
 
-`generator -> transformer/distribution -> poles/wires -> upgraded building`
+Confirmed working topology:
+
+`Windmill -> electrically upgraded building`
+
+A Transformer is therefore best treated as a distribution/splitting device
+rather than a required part of every electrical connection.
 
 ### Windmill
 
 Generates electricity.
+
+Player-tested behavior:
+
+- A Windmill can connect **directly to an electrically upgraded Factory**
+- A Gravity accumulator is **not required** for that direct Windmill-to-building
+  connection
 
 The exact electricity output has not yet been found in the UI and remains
 unknown.
@@ -49,8 +61,23 @@ Player-tested network behavior:
 - One Transformer can connect to **3 downstream buildings**
 - Counting the incoming connection from the power source, this appears to be
   **4 total cable connections/ports**
+- A Transformer is **not required** for a direct Windmill-to-building
+  connection
 
-This is currently based on direct gameplay observation rather than a tooltip.
+An earlier `Windmill -> Transformer -> building` test did not cause the target
+building to use electricity, while `Windmill -> Factory` worked directly.
+This may indicate a wiring/port issue, a Transformer behavior quirk, or a bug;
+the failed Transformer topology should be retested before drawing a stronger
+conclusion.
+
+### Cable removal
+
+There does not appear to be a convenient direct "delete cable" control in the
+tested UI.
+
+A player-tested workaround is to **dismantle the Transformer repeatedly** to
+remove its connected cables. This behavior is awkward and may be an interface
+quirk or bug, so save before rewiring a large network.
 
 ### Electric pole
 
@@ -63,8 +90,9 @@ The construction tooltip describes it as:
 > Potential energy storage device  
 > Necessary research: Electricity
 
-This suggests storage/buffering rather than being required for basic
-generation.
+Current testing shows that it is **not required** for a direct
+`Windmill -> Factory` connection. Its exact storage capacity and
+charge/discharge behavior remain unknown.
 
 ### Building electrical upgrades
 
@@ -90,8 +118,8 @@ electrical upgrade.
 - Verify whether the Thermal power plant is limited to one outgoing cable
 - Whether the coal-to-wood fallback changes output or efficiency
 - Whether power output changes with worker count
-- Can a building connect directly to a Windmill?
-- Is a Transformer mandatory or just useful for distribution?
+- Why `Windmill -> Transformer -> building` failed while
+  `Windmill -> building` worked
 - Verify Transformer port/connection limits in different topologies
 - Exact wire distance limits
 - Gravity accumulator capacity and charge/discharge behavior

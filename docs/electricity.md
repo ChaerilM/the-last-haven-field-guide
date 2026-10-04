@@ -21,18 +21,20 @@ Generates electricity.
 
 ### Thermal power plant
 
-Verified in-game observations:
+Current in-game observations:
 
 - Worker capacity: **4**
-- Observed at **4/4** workers
-- Consumption shown: **10 wood**
+- Normal consumption shown: **10 coal**
+- If coal is unavailable, the plant can fall back to **10 wood**
+- The UI changes the displayed consumption icon from coal to wood when using
+  the fallback fuel
 
-The UI displays the wood value as `-10`. The exact time basis for this
-consumption is not yet documented, so do not label it as "per hour" until that
-is verified in-game.
+The screenshots show the same Thermal power plant displaying `-10` coal in
+one state and `-10` wood in another. The fallback behavior was then confirmed
+through gameplay observation.
 
-> Earlier documentation in this repository incorrectly identified the icon as
-> coal. The clearer current screenshot shows the wood/plank icon.
+The exact time basis for the displayed `10` consumption is still not
+documented, so do not label it as "per hour" until verified.
 
 ### Transformer
 
@@ -69,7 +71,8 @@ electrical upgrade.
 ## Open tests
 
 - Thermal power plant electricity output
-- Thermal power plant wood-consumption time basis
+- Thermal power plant fuel-consumption time basis
+- Whether the coal-to-wood fallback changes output or efficiency
 - Whether power output changes with worker count
 - Can a building connect directly to a Windmill?
 - Is a Transformer mandatory or just useful for distribution?

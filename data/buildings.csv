@@ -1,0 +1,5 @@
+building,worker_capacity,resource,consumption_shown,condition,status
+Greenhouse II,4,coal,1,"Observed operating at -21 C; electricity upgrade available",verified-in-game
+Kitchen,4,coal,1,"Operating panel",verified-in-game
+Kitchen,4,food,4,"Operating panel",verified-in-game
+Thermal power plant,4,coal,10,"Observed with 3/4 workers; time basis unknown",verified-in-game

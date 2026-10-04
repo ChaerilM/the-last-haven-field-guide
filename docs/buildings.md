@@ -27,6 +27,17 @@ Verified in-game observations:
 
 The Kitchen appears to process food automatically while staffed and supplied.
 
+## Thermal power plant
+
+Verified in-game observations:
+
+- Worker capacity: **4**
+- Observed with **3/4** workers assigned
+- Consumption shown: **10 coal**
+
+The panel displays `-10` next to the coal icon. The exact consumption period
+is not yet verified.
+
 ## Science Center
 
 Once all research is completed, staffed Science Centers have little remaining

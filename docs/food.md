@@ -4,11 +4,15 @@
 
 ### Greenhouse II
 
-Current verified observation:
+Current verified observations:
 
 - 4 workers
-- 1 coal heating consumption shown
-- still operating at -21 C in the observed v5.09.13 save
+- unupgraded: **1 coal** consumption shown
+- electrically upgraded: **10 electricity** consumption shown
+- still operating at **-21 C** in the observed v5.09.13 save
+
+The current screenshots indicate that the electrical upgrade replaces the
+Greenhouse II panel's displayed coal consumption with electricity.
 
 Do not use an old -20 C cutoff as a hard rule without retesting.
 

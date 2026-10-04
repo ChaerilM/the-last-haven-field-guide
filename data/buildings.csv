@@ -5,4 +5,6 @@ Kitchen,4,coal,1,"Operating panel",verified-in-game
 Kitchen,4,food,4,"Operating panel",verified-in-game
 Thermal power plant,4,coal,10,"Normal fuel shown in operating panel",verified-in-game
 Thermal power plant,4,wood,10,"Fallback fuel when coal is unavailable",player-tested
+Factory I,4,coal,2,"Unupgraded",verified-in-game
 Factory I,4,electricity,20,"Electrically upgraded; production panel simultaneously showed 150% efficiency",verified-in-game
+Factory II,4,coal,3,"Unupgraded",verified-in-game

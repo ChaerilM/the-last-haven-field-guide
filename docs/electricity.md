@@ -19,6 +19,9 @@ Treat this as a testable model, not a finished specification:
 
 Generates electricity.
 
+The exact electricity output has not yet been found in the UI and remains
+unknown.
+
 ### Thermal power plant
 
 Current in-game observations:
@@ -36,9 +39,18 @@ through gameplay observation.
 The exact time basis for the displayed `10` consumption is still not
 documented, so do not label it as "per hour" until verified.
 
+A current player observation suggests the Thermal power plant may only allow
+**one outgoing cable**. This is not yet verified and should be retested.
+
 ### Transformer
 
-Used as part of the electricity distribution network.
+Player-tested network behavior:
+
+- One Transformer can connect to **3 downstream buildings**
+- Counting the incoming connection from the power source, this appears to be
+  **4 total cable connections/ports**
+
+This is currently based on direct gameplay observation rather than a tooltip.
 
 ### Electric pole
 
@@ -61,7 +73,9 @@ building's displayed fuel consumption with electricity:
 
 - **Greenhouse II, unupgraded:** 1 coal shown
 - **Greenhouse II, electrically upgraded:** 10 electricity shown
+- **Factory I, unupgraded:** 2 coal shown
 - **Factory I, electrically upgraded:** 20 electricity shown
+- **Factory II, unupgraded:** 3 coal shown
 
 For Factory I, the production window simultaneously showed **150% efficiency**
 while producing Armor III. This is recorded as an observation only; more
@@ -70,13 +84,17 @@ electrical upgrade.
 
 ## Open tests
 
+- Windmill electricity output
 - Thermal power plant electricity output
 - Thermal power plant fuel-consumption time basis
+- Verify whether the Thermal power plant is limited to one outgoing cable
 - Whether the coal-to-wood fallback changes output or efficiency
 - Whether power output changes with worker count
 - Can a building connect directly to a Windmill?
 - Is a Transformer mandatory or just useful for distribution?
+- Verify Transformer port/connection limits in different topologies
 - Exact wire distance limits
 - Gravity accumulator capacity and charge/discharge behavior
+- Factory II electricity consumption after electrical upgrade
 - Electricity consumption by additional buildings
 - Whether electrification changes production speed/efficiency on each building

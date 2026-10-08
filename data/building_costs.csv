@@ -1,0 +1,3 @@
+building,wood,stone,metal,worker_capacity,body_capacity,additional_notes,status
+Cemetery,70,20,10,1,18,Gathers corpses across the entire map,verified-in-game
+Resource Station,20,,10,4,,"Collectors gather almost all types of resources within their area; place only near collectible resources",verified-in-game

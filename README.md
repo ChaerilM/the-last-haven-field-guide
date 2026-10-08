@@ -37,6 +37,7 @@ When the game UI disagrees with an old guide or patch note, record the in-game v
 - [Building & production notes](docs/buildings.md)
 - [Electricity](docs/electricity.md)
 - [Food & kitchens](docs/food.md)
+- [Global-map outposts and worker convoys](docs/outposts.md)
 - [Law reference](docs/laws.md)
 - [Contributing](CONTRIBUTING.md)
 

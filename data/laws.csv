@@ -1,5 +1,13 @@
 branch,law,law_points,effect_type,effect_value,effect_unit,tooltip_effect,status
 Dictatorship,Carrot and stick,100,prisoner_death_chance_reduction,50,percent,Reduces prisoner death chance by 50%,verified-in-game
 Dictatorship,Steady hand,175,stability_gain_increase,30,percent,Increases stability gain by 30%,verified-in-game
-Authority,Military trade reputation,200,resource_purchase_price_reduction,10,percent,Reduces resource purchase price by 10% and increases military items sale price by 10%,verified-in-game
-Authority,Military trade reputation,200,military_item_sale_price_increase,10,percent,Reduces resource purchase price by 10% and increases military items sale price by 10%,verified-in-game
+Dictatorship,Military trade reputation,200,resource_purchase_price_reduction,10,percent,Reduces resource purchase price by 10% and increases military items sale price by 10%,verified-in-game
+Dictatorship,Military trade reputation,200,military_item_sale_price_increase,10,percent,Reduces resource purchase price by 10% and increases military items sale price by 10%,verified-in-game
+Dictatorship,Church blessing,250,church_resource_output_increase,25,percent,Church increases resource output by 25%,verified-in-game
+Authority,Sociological research,100,law_point_gain_increase,10,percent,Increases law points gain by 10%,verified-in-game
+Authority,Eloquence,125,dealer_price_reduction,10,percent,Reduces dealer prices by 10%,verified-in-game
+Authority,Mining trade reputation,150,military_item_purchase_price_reduction,10,percent,Reduces military items purchase price by 10% and increases resource sale price by 10%,verified-in-game
+Authority,Mining trade reputation,150,resource_sale_price_increase,10,percent,Reduces military items purchase price by 10% and increases resource sale price by 10%,verified-in-game
+Authority,Negotiation,175,raider_resource_demand_reduction,25,percent,Raiders require 25% fewer resources,verified-in-game
+Authority,Good conditions,200,settler_arrival_increase,15,percent,15% more settlers join the settlement,verified-in-game
+Authority,Church doctrine,250,church_stability_gain_increase,30,percent,Increases stability gain from the church by 30%,verified-in-game

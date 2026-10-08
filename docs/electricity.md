@@ -11,25 +11,26 @@ The electricity system includes:
 
 ## Current working model
 
-Current player testing shows that a Transformer is **not mandatory** for a
-basic connection.
+**Important distinction:** player testing has confirmed that electrical cables
+can be attached to buildings, but **has not yet confirmed that electricity is
+delivered**. These two facts must not be treated as equivalent.
 
-Confirmed working topology:
-
-`Windmill -> electrically upgraded building`
-
-A Transformer is therefore best treated as a distribution/splitting device
-rather than a required part of every electrical connection.
+The correct working circuit, whether a Transformer is required, and whether
+a Gravity accumulator is necessary remain **unverified**.
 
 ### Windmill
 
 Generates electricity.
 
-Player-tested behavior:
+Player-tested observations:
 
-- A Windmill can connect **directly to an electrically upgraded Factory**
-- A Gravity accumulator is **not required** for that direct Windmill-to-building
-  connection
+- A cable can be placed **directly between a Windmill and a Factory**
+- However, the Factory **did not receive usable electricity**
+- Direct cable tests to **Greenhouse II and Kitchen** also did not result in
+  usable electricity
+
+This does **not** establish whether an accumulator is required, because the
+Windmill's actual power output has not been verified.
 
 The exact electricity output has not yet been found in the UI and remains
 unknown.
@@ -61,14 +62,13 @@ Player-tested network behavior:
 - One Transformer can connect to **3 downstream buildings**
 - Counting the incoming connection from the power source, this appears to be
   **4 total cable connections/ports**
-- A Transformer is **not required** for a direct Windmill-to-building
-  connection
+- Direct cable placement between Windmill and building is possible, but
+  **successful power delivery is unverified**.
 
-An earlier `Windmill -> Transformer -> building` test did not cause the target
-building to use electricity, while `Windmill -> Factory` worked directly.
-This may indicate a wiring/port issue, a Transformer behavior quirk, or a bug;
-the failed Transformer topology should be retested before drawing a stronger
-conclusion.
+Both `Windmill -> Transformer -> building` and direct `Windmill -> building`
+wiring have been attempted without confirmed electrical operation.
+Possible causes include missing accumulator, insufficient/zero generation,
+building upgrade state, connection behavior, or a game bug.
 
 ### Cable removal
 
@@ -90,9 +90,13 @@ The construction tooltip describes it as:
 > Potential energy storage device  
 > Necessary research: Electricity
 
-Current testing shows that it is **not required** for a direct
-`Windmill -> Factory` connection. Its exact storage capacity and
-charge/discharge behavior remain unknown.
+**The player currently suspects that the Gravity accumulator may be required
+to make Windmill electricity usable. This remains an unverified hypothesis.**
+The Windmill-to-building cable can be built without it, but that cable did not
+result in usable power.
+
+The accumulator's exact storage capacity and charge/discharge behavior remain
+unknown. A controlled test with and without the accumulator is needed.
 
 ### Building electrical upgrades
 
@@ -118,8 +122,12 @@ electrical upgrade.
 - Verify whether the Thermal power plant is limited to one outgoing cable
 - Whether the coal-to-wood fallback changes output or efficiency
 - Whether power output changes with worker count
-- Why `Windmill -> Transformer -> building` failed while
-  `Windmill -> building` worked
+- Compare actual electricity delivery (not merely cable placement) for
+  `Windmill -> building`, `Windmill -> Transformer -> building`, and
+  `Windmill -> Gravity accumulator -> building`
+- Confirm whether the generator produces enough electricity to meet the
+  target building's stated demand
+- Check whether electrical upgrades are installed/active on the test building
 - Verify Transformer port/connection limits in different topologies
 - Exact wire distance limits
 - Gravity accumulator capacity and charge/discharge behavior

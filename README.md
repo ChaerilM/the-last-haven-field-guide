@@ -37,9 +37,10 @@ When the game UI disagrees with an old guide or patch note, record the in-game v
 - [Building & production notes](docs/buildings.md)
 - [Electricity](docs/electricity.md)
 - [Food & kitchens](docs/food.md)
+- [Law reference](docs/laws.md)
 - [Contributing](CONTRIBUTING.md)
 
-Structured data lives in `data/` so it can later power tables, a static site, or tooling.
+Structured data lives in `data/` so it can later power tables, a static site, or tooling, including `weapons.csv`, `buildings.csv`, `building_costs.csv`, and `laws.csv`.
 
 ## Contributing
 

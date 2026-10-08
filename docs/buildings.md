@@ -78,10 +78,30 @@ Once all research is completed, staffed Science Centers have little remaining
 research value. Workers can be reassigned. Keep one unstaffed if desired for
 future testing or game updates.
 
+## Cemetery
+
+Verified in-game construction tooltip:
+
+- Construction: **70 wood, 20 stone, 10 metal**
+- Capacity: **18 bodies**
+- Worker capacity: **1**
+- Collects corpses **across the entire map**
+
+This is a burial building, not a repeatable Stability source when no
+inhabitants are dying. The tooltip does not give a burial-to-Stability value.
+
 ## Resource Station
 
-General scavenging building. Exact gatherable resource types and depletion
-behavior should be documented with screenshots as testing continues.
+Verified in-game construction tooltip:
+
+- Construction: **20 wood, 10 metal**
+- Worker capacity: **4**
+- Collectors gather **almost all types of resources** within the station's
+  local area
+- Placement is restricted to locations near collectible resources
+
+The tooltip does not establish which specific resources are collectible.
+Exact stone-gathering/depletion behavior remains an open test.
 
 ## Stone Crusher
 
